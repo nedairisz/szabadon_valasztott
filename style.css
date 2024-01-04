@@ -1,0 +1,233 @@
+*{
+    font-family: "Lucida Console", "Courier New", monospace;
+    scroll-behavior: smooth;
+    
+}
+body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    height: 70vh;
+    background-image: -webkit-linear-gradient(60deg, #233b4e 60%, #9aa3aa 90%);
+    display: grid;
+    grid-template-columns: 1fr 300px;
+}
+header img{
+    width: 90%;
+    animation: rotation 200s infinite linear;
+    padding-top: 40px;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+h1{
+    text-transform: uppercase;
+    padding:10px;
+    text-emphasis-style: double-circle;
+    text-emphasis-color: red;
+    padding-top: 40px;
+    font-size: 60px;
+    color: orange;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(224, 176, 44); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation-delay: 2s;
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret 1s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(224, 176, 44) }
+}
+
+ul {
+    list-style-image: url(kepek/apro.png);
+}
+li{
+    padding: 8px;
+}
+li :hover{
+    padding: 5px;
+    border: 4px solid red;
+    border-radius: 8px;
+}
+a{
+    text-decoration-style: wavy;
+    color: orange;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.elso {
+   display: grid;
+   grid-template-columns: 300px 1fr;
+   background-color: rgb(245, 245, 220);
+}
+.szoveg1{
+    columns:50px 4;
+    height: 55vh;
+    padding: 60px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.elso h2{
+    color: red;
+    font-weight: bold;
+}
+
+.masodik{
+    height: 45vh;
+    background-image: -webkit-linear-gradient(70deg, #b3bdc5 50%, rgb(245, 245, 220) 70%);
+    columns: 50px 2;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+}
+.masodik h2{
+    color: #0e1e2c;
+    margin-top: 0px;
+}
+.masodik p{
+    color: rgb(109, 14, 14);
+    font-size: 17px;
+    font-weight: bold;   
+    margin-right: 60px;
+}
+
+footer{
+    background-color: #0e1e2c;
+    height: 15vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 60px;
+}
+footer div{
+    align-items: center;
+}
+footer p{
+    color: orange;
+    font-size: 20px;
+    text-align: center;
+}
+
+.harmadik{
+    background-color: #b3bdc5;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    align-items: center;
+}
+video{
+    width: 500px;
+    border: 15px solid transparent;
+    padding: 15px;
+    border-image-source:url("kepek/pici_star.webp");  
+    border-image-width: 40px;
+    border-image-repeat: round;
+    margin-left: 150px;
+}
+#egy{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: egy;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin-left: 200px;
+    border-radius: 65% 46% 54% 35% ;
+}  
+@keyframes egy {
+    from {top: 0px; background-color: orange;}
+    to {top: 200px; background-color: red;}
+}
+#ketto{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(40, 48, 95);
+    position: relative;
+    animation-name: ketto;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin-left: 200px;
+    border-radius: 79% 96% 64% 75% ; 
+}  
+@keyframes ketto {
+    from {top: 0px; background-color: rgb(128, 29, 29);}
+    to {top: 200px; background-color: rgb(40, 48, 95);}
+}
+.csik{
+    background-image: -webkit-linear-gradient(70deg, #b3bdc5 50%, rgb(245, 245, 220) 70%);
+    font-size:50px;
+    font-weight:bold;
+    color: orange;
+    text-shadow: 2px 2px 8px #c2791b;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 0px;
+    text-transform: uppercase;
+}
+
+.negyedik{
+    background-image: -webkit-linear-gradient(1deg, #b3bdc5 10%, rgb(245, 245, 220) 90%);
+    columns:50px 3;
+    height: 55vh;
+    padding: 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-top: 0px;
+}
+.negyedik h2{
+    color: red;
+}
+.negyedik p{
+    margin: 0px;
+}
+
+.otodik{
+    height: 70vh;
+    background-color: beige;
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.negyzetek { 
+    position:absolute; 
+}
+.negyzetek div{
+    width:400px;
+    height:400px;
+    position:absolute;
+    background-color:yellow;
+    border:1px solid;
+    opacity:0.5;
+}
+#kiemelt {
+    position:absolute;
+    background-color:red!important;
+    opacity:1!important;
+    z-index: 1;
+}
+.otodig img{
+    size: 200%;
+}
